@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Planning Poker Room</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/styles/bootstrap.min.css" rel="stylesheet">
+    <link href="/styles/main.css" rel="stylesheet">
+    <link href="/styles/font-awesome.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="/scripts/jquery.js"></script>
+    <script type="text/javascript" src="/scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/scripts/react-with-addons.js"></script>
+
+    
+    <script type="text/javascript" src="/scripts/bundle.js"></script>
+
+  </head>
+  <body>
+    <div class="container-fluid fill">
+      <div class="row fill">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <div id="header" class="col-xs-8 col-md-8 col-sm-8">
+            
+          </div>
+          <div id="button-area" class="col-xs-4 col-md-4 col-sm-4">
+
+          </div>
+        </div>
+        <div id="main-area" class="fill">
+          <div id="user-area" class="col-xs-3 col-md-3 col-sm-3">
+            
+          </div>
+          <div id="content-area" class="col-xs-9 col-md-9 col-sm-9 border-top-left fill">
+            <div class="row">
+              <div class="box-row">
+                <div class="upper-box">
+                  <h4>Task Name</h4>
+                  <p>Description.....</p>
+                </div>
+                <div class="bottom-box">
+                  <p>
+                    <button class="btn btn-default btn-lg">1</button>
+                    <button class="btn btn-default btn-lg">2</button>
+                    <button class="btn btn-default btn-lg">3</button>
+                    <button class="btn btn-default btn-lg">5</button>
+                    <button class="btn btn-default btn-lg">8</button>
+                    <button class="btn btn-default btn-lg">13</button>
+                    <button class="btn btn-default btn-lg">20</button>
+                    <button class="btn btn-default btn-lg">40</button>
+                    <button class="btn btn-default btn-lg">100</button>
+                    <button class="btn btn-primary btn-lg">Submit</button>
+                  </p>
+                </div>
+              </div>
+              <div class="box-row">
+                <div class="upper-box">
+                  <h4>Task Name</h4>
+                  <p>Description.....</p>
+                </div>
+                <div class="bottom-box">
+                  <ul class="list-inline">
+                    <li>
+                      <i class="fa fa-user gray-color"></i> User name <kbd>1</kbd>
+                    </li>
+                    <li>
+                      <i class="fa fa-user gray-color"></i> User name <kbd>2</kbd>
+                    </li>
+                    <li>
+                      <i class="fa fa-user gray-color"></i> User name <kbd>3</kbd>
+                    </li>
+                    <li>
+                      <i class="fa fa-user gray-color"></i> User name <kbd>5</kbd>
+                    </li>
+                    <li>
+                      <i class="fa fa-user gray-color"></i> User name <kbd>8</kbd>
+                    </li>
+                    <li>
+                      <i class="fa fa-user gray-color"></i><samp>User nameUser nameUser nameUser nameUser nameUser nameUser nameUser nameUser name</samp><kbd>13</kbd>
+                    </li>
+                    <li>
+                      <i class="fa fa-user gray-color"></i><span> User name <kbd>20</kbd></span>
+                    </li>
+                    <li>
+                      <i class="fa fa-user gray-color"></i> User name <kbd>40</kbd>
+                    </li>
+                    <li>
+                      <i class="fa fa-user gray-color"></i> User name <kbd>100</kbd>
+                    </li>
+                  </ul>
+                  <div class="row avg-box"><code>  Avg Point: 100  </code></div>
+                </div>
+              </div>
+            </div>
+            <div class="box-row">
+              <div class="upper-box">
+                <h4>Task Name</h4>
+                <p>Description.....</p>
+              </div>
+              <div class="bottom-box">
+                <p>
+                  <button class="btn btn-warning btn-lg"> Close Poll </button>
+                </p>
+              </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+
+  </body>
+  <div id="modal-username"></div>
+  <div id="modal-task"></div>
+</html>

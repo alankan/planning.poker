@@ -1,0 +1,46 @@
+{
+  "name": "PlanningPoker",
+  "description": "Real-time Planning Poker game for agile",
+  "version": "0.0.1",
+  "author": {
+    "name": "Kerwin.Weng"
+  },
+  "engines": {
+    "node": "0.12.7",
+    "npm": "2.1.12"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "flux": "^2.0.3",
+    "grunt": "*",
+    "keymirror": "^0.1.1",
+    "koa-router": "*",
+    "koa-session": "*",
+    "koa-static-cache": "*",
+    "koa.io": "*",
+    "moment": "2.4.0",
+    "object-assign": "^3.0.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "debug": "1.x.x",
+    "grunt-concurrent": "~1",
+    "grunt-contrib-watch": "~0",
+    "grunt-env": "~0",
+    "grunt-nodemon": "~0",
+    "grunt-protractor-runner": "~1",
+    "jsx-loader": "^0.13.2",
+    "koa-livereload": "~0",
+    "should": "~4",
+    "webpack": "^1.11.0"
+  },
+  "main": "lib",
+  "files": [
+    "lib",
+    "docs",
+    "template"
+  ],
+  "scripts": {
+    "start": "node --harmony app.js"
+  }
+}

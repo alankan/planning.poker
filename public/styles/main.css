@@ -1,0 +1,104 @@
+html, body {
+    height: 100%;
+}
+
+.border-top-left {
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+}
+
+#user-area {
+	border-top: 1px solid #ccc;
+}
+
+#button-area {
+	padding-top: 20px;
+	float: right;
+}
+
+#content-area{
+	overflow: scroll;
+}
+
+.border-bottom-left {
+	border-bottom: 1px solid #eee;
+	padding-left: 15px;
+	background-color: #fefefe;
+}
+
+.fill {
+	min-height: 100%;
+	height: 100%;
+}
+
+.upper-box {
+	padding: 8px 10px 2px 20px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #ddd;
+	background-color: #fff;
+	border-radius: 6px 6px 0 0;
+}
+.upper-box h4{
+	text-transform: uppercase;
+}
+
+.bottom-box {
+	padding: 15px 20px 5px 20px;
+	border-radius: 0 0 6px 6px;
+	border-bottom: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	background-color: #efefef;
+}
+.bottom-box p {
+	text-align: center;
+}
+
+.bottom-box li {
+	margin: 10px 0 10px 15px;
+	width: 192px;
+}
+.bottom-box li kbd{
+	margin-left: 4px;
+}
+
+.bottom-box li samp{
+	text-overflow: hidden;
+	width: 134px;
+	overflow: hidden;
+    white-space:nowrap;
+    display: inline-block;
+    vertical-align: -5px;
+    padding-left: 3px;
+}
+.bottom-box .avg-box {
+	width: 100%;
+	margin: 0;
+	padding-top: 10px;
+	border-top: 1px solid #ddd;
+	text-align: center;
+
+}
+
+.bottom-box .btn {
+	margin: 8px 12px 8px 12px;
+	outline: none;
+}
+
+.box-row {
+	padding: 30px 40px 0px 40px;
+}
+
+.green-color {
+	color: green;
+}
+
+.gray-color {
+	color: gray;
+}
+
+.user-list-padding {
+	padding-left: 20px;
+	padding-top: 15px;
+}
