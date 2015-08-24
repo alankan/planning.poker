@@ -12,7 +12,7 @@ var _tasks = {};
 var TaskStore = assign({}, EventEmitter.prototype, {
 
 	getAllTasks: function(){
-		return _.values(_tasks).reverse();
+		return (_.values(_tasks)).reverse();
 	},
 
 	updateTask: function(task, status){
