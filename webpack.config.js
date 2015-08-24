@@ -9,7 +9,7 @@ module.exports = {
 
     externals: {
       'react': 'React',
-      'underscore': '_'
+      'underscore': '_',
       'jquery': '$'
     },
 

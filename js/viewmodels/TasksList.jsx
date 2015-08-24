@@ -28,9 +28,9 @@ var TasksList = React.createClass({
   render: function(){
   	var lists = [];
   	var tasks = this.state.tasks||[];
-  	for (task of tasks){
-  		console.log("setup task:", task);
-  		lists.push(<Task key={task.taskInfo.tid} task={task.taskInfo} status={task.status}/>)
+  	for (var i=0; i< tasks.length; i++){
+  		console.log("setup task:", tasks[i]);
+  		lists.push(<Task key={tasks[i].taskInfo.tid} task={tasks[i].taskInfo} status={tasks[i].status}/>)
   	}
 
   	return <div className="row">{lists}</div>

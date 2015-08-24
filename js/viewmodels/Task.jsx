@@ -55,7 +55,8 @@ var Task = React.createClass({
 		if (status==1){
 			var bottomBtns = [];
 
-			for (point of Points){
+			for (var i=0; i<Points.length;i++){
+				var point = Points[i];
 				var highlightBtn = !(curPoint == point);
 				bottomBtns.push(<SimpleBtn key={point} returnVal={point} className={ highlightBtn ? 'btn btn-default btn-lg':'btn btn-info btn-lg'} label={point} onClick={this._handlePointBtnClick} enable={true}/>);	
 			}
@@ -67,7 +68,8 @@ var Task = React.createClass({
 		if (status==2){
 			var bottomBtns = [];
 
-			for (point of Points){
+			for (var i=0; i<Points.length;i++){
+				var point = Points[i];
 				var highlightBtn = !(curPoint == point);
 				bottomBtns.push(<SimpleBtn key={point} returnVal={point} className={ highlightBtn ? 'btn btn-default btn-lg':'btn btn-info btn-lg'} label={point} onClick={this._handlePointBtnClick} enable={false}/>);	
 			}
@@ -80,7 +82,8 @@ var Task = React.createClass({
 			var users = [];
 			var votes = this.props.task.votes;
 			var totalPoints = 0;
-			for (vote of votes){
+			for (var i=0; i<votes.length;i++){
+				var vote = votes[i];
 				users.push(<li key={vote.uid}><i className="fa fa-user gray-color"></i><samp>{vote.uname}<kbd>{vote.point}</kbd></samp></li>);
 				totalPoints += vote.point;
 			}
