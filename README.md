@@ -1,7 +1,7 @@
 # Planning Poker Room
 
 
-Basic Node.js demo project used to gives students perception of Planning Poker in agile project management, and also leave room for students to practice coding.
+Basic Node.js demo project is used to give students perception of Planning Poker in agile project management, and also leave room for students to practice coding.
 
 Key technical features:
 
@@ -13,10 +13,10 @@ Key technical features:
  * Use [Bootstrap 3.3.5](http://getbootstrap.com/) as CSS framework
 
 Main functions:
- * User who create the room will automaticlly become task manager and able to create new tasks.
- * Once new task has been created all users in the same room will receive that task, and therefor can mark the task with point.
- * Once all users (exclude task manager) gived points, the poll results will automaticlly publish to every user.
- * User drop out won't affect the poll results been published.
+ * User who create the room will automaticlly become task manager of the room and able to create new tasks.
+ * Once the new task has been created all users in the same room will receive that task info immediately, and mark the task with points.
+ * Once all users (exclude task manager) giving points, the poll results will automaticlly published to every user.
+ * User who drop out the room will not affect the poll results to be published.
 
 
 
@@ -41,7 +41,7 @@ after installed, use following command to start server:
   node --harmony app.js
 ```
 
-for development, first need to install [webpack](http://webpack.github.io/) and [grunt](http://gruntjs.com), and start webpack to monitor javascript and jsx files changes:
+for development, first need to install [webpack](http://webpack.github.io/) and [grunt](http://gruntjs.com), and start webpack to monitor javascript and jsx file changes:
 ```
   sudo npm install webpack grunt-cli -g
   webpack --progress --colors --watch
