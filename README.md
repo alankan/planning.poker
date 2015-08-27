@@ -35,7 +35,6 @@ Make sure [Node.js](https://nodejs.org/download/) 0.12.7 or above installed.
 Checkout or download this project, <kbd>cd</kbd> into its folder and type following command to install
 ```
   npm install
-  
 ```
 after installed, use following command to start server:
 ```
