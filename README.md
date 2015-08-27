@@ -34,13 +34,20 @@ Make sure [Node.js](https://nodejs.org/download/) 0.12.7 or above installed.
 
 Checkout or download this project, <kbd>cd</kbd> into its folder and type following command to install
 ```
-  npm install --dev
+  npm install
+  
 ```
-for development, remember running webpack to monitor javascript and jsx changes:
+after installed, use following command to start server:
 ```
+  node --harmony app.js
+```
+
+for development, first need to install [webpack](http://webpack.github.io/) and [grunt](http://gruntjs.com), and start webpack to monitor javascript and jsx files changes:
+```
+  sudo npm install webpack grunt-cli -g
   webpack --progress --colors --watch
 ```
-to start the server:
+then open another terminal and use following command to start with server with auto restart:
 ```
   grunt
 ```

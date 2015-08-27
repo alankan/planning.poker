@@ -1,6 +1,10 @@
 {
   "name": "PlanningPoker",
   "description": "Real-time Planning Poker game for agile",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hunteva/planning.poker.git"
+    },
   "version": "0.0.1",
   "author": {
     "name": "Kerwin.Weng"
@@ -12,7 +16,6 @@
   "license": "MIT",
   "dependencies": {
     "flux": "^2.0.3",
-    "grunt": "*",
     "keymirror": "^0.1.1",
     "koa-router": "*",
     "koa-session": "*",
@@ -23,7 +26,6 @@
     "underscore": "^1.8.3"
   },
   "devDependencies": {
-    "debug": "1.x.x",
     "grunt-concurrent": "~1",
     "grunt-contrib-watch": "~0",
     "grunt-env": "~0",
@@ -34,11 +36,9 @@
     "should": "~4",
     "webpack": "^1.11.0"
   },
-  "main": "lib",
   "files": [
-    "lib",
-    "docs",
-    "template"
+    "public",
+    "js"
   ],
   "scripts": {
     "start": "node --harmony app.js"
