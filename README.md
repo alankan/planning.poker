@@ -1,8 +1,7 @@
 # Planning Poker Room
---------------------------------------------
 
 
-Basic Node.js demo project used to gives students perception of how Planning Poker is in agile project managment, and also leave room for students to practice coding.
+Basic Node.js demo project used to gives students perception of Planning Poker in agile project management, and also leave room for students to practice coding.
 
 Key technical features:
 
@@ -45,7 +44,8 @@ to start the server:
 ```
   grunt
 ```
-after server started, you can point your browser to [http://localhost:3000/room/create](http://localhost:3000/room/create)
-to play.
+
+after server started, open [http://localhost:3000/room/create](http://localhost:3000/room/create)
+in your browser to play with.
 
 
