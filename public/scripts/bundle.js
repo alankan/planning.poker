@@ -1703,7 +1703,7 @@
 
 	module.exports = SimpleBtn;
 
-	React.createElement("button", {class: "btn btn-warning btn-lg"}, " Close Poll ")
+
 
 /***/ }
 /******/ ]);

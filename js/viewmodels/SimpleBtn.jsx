@@ -20,4 +20,3 @@ var SimpleBtn = React.createClass({
 
 module.exports = SimpleBtn;
 
-<button class="btn btn-warning btn-lg"> Close Poll </button>
