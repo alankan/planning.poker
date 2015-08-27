@@ -1,17 +1,51 @@
-This README.md file is displayed on your project page. You should edit this 
-file to describe your project, including instructions for building and 
-running the project, pointers to the license under which you are making the 
-project available, and anything else you think would be useful for others to
-know.
+# Planning Poker Room
+--------------------------------------------
 
-We have created an empty license.txt file for you. Well, actually, it says,
-"<Replace this text with the license you've chosen for your project.>" We 
-recommend you edit this and include text for license terms under which you're
-making your code available. A good resource for open source licenses is the 
-[Open Source Initiative](http://opensource.org/).
 
-Be sure to update your project's profile with a short description and 
-eye-catching graphic.
+Basic Node.js demo project used to gives students perception of how Planning Poker is in agile project managment, and also leave room for students to practice coding.
 
-Finally, consider defining some sprints and work items in Track & Plan to give 
-interested developers a sense of your cadence and upcoming enhancements.
+Key technical features:
+
+ * Use [Koa.io](https://github.com/koajs/koa.io) which is a generator based flow-control web framework integrated with Socket.io
+ * Realtime server browser bidirectional channel via Socket.io
+ * Use [React.js](https://facebook.github.io/react/) as frontend view model
+ * Use [Flux](https://facebook.github.io/flux/) as frontend event dispatcher
+ * Use [Webpack](http://webpack.github.io/) to bundle javascript modules 
+ * Use [Bootstrap 3.3.5](http://getbootstrap.com/) as CSS framework
+
+Main functions:
+ * User who create the room will automaticlly become task manager and able to create new tasks.
+ * Once new task has been created all users in the same room will receive that task, and therefor can mark the task with point.
+ * Once all users (exclude task manager) gived points, the poll results will automaticlly publish to every user.
+ * User drop out won't affect the poll results been published.
+
+
+
+
+## Demo
+
+* Use [planning-poker-room.mybluemix.net/room/create](planning-poker-room.mybluemix.net/room/create) to create room for others join.
+
+* Use [planning-poker-room.mybluemix.net/room/*NUM*](planning-poker-room.mybluemix.net/room/) to join.
+ Replace *NUM* with actual room number created from previous url to join the room.
+
+## Install
+
+Make sure [Node.js](https://nodejs.org/download/) 0.12.7 or above installed.
+
+Checkout or download this project, [cd] into its folder and type following command to install
+```
+  npm install --dev
+```
+for development, remember running webpack to monitor javascript and jsx changes:
+```
+  webpack --progress --colors --watch
+```
+to start the server:
+```
+  grunt
+```
+after server started, you can point your browser to [http://localhost:3000/room/create](http://localhost:3000/room/create)
+to play.
+
+
