@@ -15,7 +15,7 @@ Key technical features:
 Main functions:
  * User who create the room will automaticlly become task manager of the room and able to create new tasks.
  * Once the new task has been created all users in the same room will receive that task info immediately, and mark the task with points.
- * Once all users (exclude task manager) giving points, the poll results will automaticlly published to every user.
+ * Once all users (exclude task manager) had given points, the poll results will automaticlly published to every user.
  * User who drop out the room will not affect the poll results to be published.
 
 
