@@ -6,7 +6,7 @@ var SubmitBtn = require('./SubmitBtn.jsx')
 var Hub = require('../dispatcher');
 var Const = require('../constant');
 
-var Points = [1,2,3,5,8,13,20,40,100];
+var Points = [1,2,3,4,5,6,7,8,9];
 
 var Task = React.createClass({
 	getInitialState: function() {
